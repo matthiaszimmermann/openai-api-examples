@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.183.0/containers/ruby
+{
+	"name": "openai-api-examples",
+	"dockerComposeFile": "docker-compose.yaml",
+    "service": "openai",
+    "workspaceFolder": "/workspace",
+
+    // Set *default* container specific settings.json values on container create.
+	"settings": {
+		//"terminal.integrated.shell.linux": "/bin/bash"
+		"editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+		"editor.fontSize": 13,
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+		"github.vscode-pull-request-github",
+		"mhutchie.git-graph",
+		"eamodio.gitlens",
+		"oderwat.indent-rainbow",
+		"2gua.rainbow-brackets",
+		"johnpapa.vscode-peacock",
+		"vikas.code-navigation",
+	],
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
