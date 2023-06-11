@@ -19,7 +19,7 @@ The goal of this section is to verify that your end-to-end setup is working prop
 The content is inspired by [OpenAI's question answering tutorial](https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb).
 
 The "Hello World" task is to answer questions about an article provided to the program.
-As a default a [Wipedia article](https://en.wikipedia.org/wiki/Curling_at_the_2022_Winter_Olympics) about curling in the 2022 Olympics is used.
+As a default a [Wikipedia article](https://en.wikipedia.org/wiki/Curling_at_the_2022_Winter_Olympics) about curling in the 2022 Olympics is used.
 
 Run the program as shown below
 
