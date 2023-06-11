@@ -11,6 +11,7 @@ The devcontainer setup takes care of the necessary installations to work with Py
 * You need to be signed up on [OpenAI](https://platform.openai.com/).
 * In your account settings you need to provide your payment method (eg. credit card details)
 * In your account settings you need to create an API KEY (and store that key in a save place)
+* For `gpt-4` model access a [separate application](https://openai.com/waitlist/gpt-4-api) is needed as of 11.6.23
 
 ## "Hello World"
 
@@ -24,6 +25,7 @@ As a default a [Wikipedia article](https://en.wikipedia.org/wiki/Curling_at_the_
 Run the program as shown below
 
 ```bash
+export OPENAI_API_KEY=<your-api-key-here>
 python hello_world.py
 ```
 
@@ -37,6 +39,7 @@ Now run the program and provide some other article to ask questions about.
 Hint: It is more interesting to test the program with articles about events after the models knowledge cutoff of 2021
 
 ```bash
+export OPENAI_API_KEY=<your-api-key-here>
 python hello_world.py data/wikipedia_cop27.shortened.txt
 ```
 
@@ -49,3 +52,4 @@ Example questions:
 Remarks:
 * The source is the [COP27 Wikipedia article](https://en.wikipedia.org/wiki/2022_United_Nations_Climate_Change_Conference)
 * The example text is a shortened version to remain within the token limit of the `gpt-3.5-turbo` model
+
