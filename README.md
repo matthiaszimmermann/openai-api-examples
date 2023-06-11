@@ -32,3 +32,20 @@ Example questions:
 * Which athletes won the gold medal in curling at the 2022 Winter Olympics?
 * List the countries that participated in the 2022 curling winter olypmic games
 * List the team members of all teams winning gold in the 2022 curling olympics
+
+Now run the program and provide some other article to ask questions about.
+Hint: It is more interesting to test the program with articles about events after the models knowledge cutoff of 2021
+
+```bash
+python hello_world.py data/wikipedia_cop27.shortened.txt
+```
+
+Example questions:
+
+* Summarize the article
+* What is the intention of the loss and damage fund?
+* Which contries have pledged to this fund?
+
+Remarks:
+* The source is the [COP27 Wikipedia article](https://en.wikipedia.org/wiki/2022_United_Nations_Climate_Change_Conference)
+* The example text is a shortened version to remain within the token limit of the `gpt-3.5-turbo` model
