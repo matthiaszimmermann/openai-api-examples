@@ -53,3 +53,18 @@ Remarks:
 * The source is the [COP27 Wikipedia article](https://en.wikipedia.org/wiki/2022_United_Nations_Climate_Change_Conference)
 * The example text is a shortened version to remain within the token limit of the `gpt-3.5-turbo` model
 
+## Search and Ask
+
+"Search and Ask" is a strategy to let GPT answer questions covering a large amount of articles using the standard GPT model (without finetunig).
+
+The main idea is to split the task into two parts: Search and ask.
+
+1. Given a user question the user question is turned into an embedding
+2. In the search part the best fitting article(s) are retrieved by comparing the question embedding with the article embeddings
+3. Using the best articles GPT is asked to respond to the users question as in the "Hello World" example
+
+For the search part embeddings for all available articles can be pre-computed using an embedding API service from OpenAI.
+
+
+TODO 
+* Complete `search_and_ask.py` to cover scope of the corresponding [question answering example](https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb).
