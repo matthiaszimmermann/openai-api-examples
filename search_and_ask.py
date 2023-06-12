@@ -35,8 +35,7 @@ def get_embeddings(articles: list[str]) -> list[dict]:
 
     # build result list including both articles and corresponding embeddings
     for i, item in enumerate(response["data"]):
-        # double check embeddings are in same order as input
-        assert i == item['index']
+        assert i == item['index'] # double check embeddings are in same order as input
         embeddings.append({
             'article': articles[i],
             'embedding': item['embedding']

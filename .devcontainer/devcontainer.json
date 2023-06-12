@@ -13,10 +13,6 @@
 		"editor.fontSize": 13,
 	},
 
-	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-	},
-
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
         "ms-python.python",
@@ -25,7 +21,6 @@
 		"mhutchie.git-graph",
 		"eamodio.gitlens",
 		"oderwat.indent-rainbow",
-		"2gua.rainbow-brackets",
 		"johnpapa.vscode-peacock",
 		"vikas.code-navigation",
 	],
